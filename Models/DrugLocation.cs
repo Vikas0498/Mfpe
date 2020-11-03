@@ -8,13 +8,13 @@ namespace MfpeDrugsApi.Models
 {
     public class DrugLocation
     {
+      //  public int Id { get; set; }
         public int Id { get; set; }
-        [Key]
-        public int DrugId { get; set; }
-
         [Required]
         public string Location { get; set; }
         [Required]
         public int Quantity { get; set; }
+        [Required]
+        public string DrugName { get; set; }
     }
 }

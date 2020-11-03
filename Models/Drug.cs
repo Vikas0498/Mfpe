@@ -14,15 +14,15 @@ namespace MfpeDrugsApi.Models
 
         public string Name { get; set; }
         [Required]
-        [Display(Name = "ManuactureDate")]
+      //  [Display(Name = "ManufactureDate")]
 
-        public DateTime ManufactureDate { get; set; }
+        public DateTime ManufacturedDate { get; set; }
         [Required]
         public DateTime ExpiryDate { get; set; }
         [Required]
-        public string ManufacturerName { get; set; }
-        public DrugLocation DrugLocation { get; set; }
-        [Required]
-        public int DrugId { get; set; }
+        public string Manufacturer { get; set; }
+        
+        public int Quantity { get; set; }
+        
     }
 }

@@ -8,9 +8,9 @@ namespace MfpeDrugsApi.Repository
     public interface IRepository<T>
     {
         void Add(T item);
-        void Update(T item);
-        void Delete(int id);
         T Get(int id);
         T Get(string name);
+        //T PUT(int id,string location);
+        public bool Check(int id,string location);
     }
 }
