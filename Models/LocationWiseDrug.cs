@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace MfpeDrugsApi.Models
 {
-    public class DrugLocation
+    public class LocationWiseDrug
     {
-      //  public int Id { get; set; }
         public int Id { get; set; }
+
+
+        public string Name { get; set; }
         
-        public string Location { get; set; }
+
+        public DateTime ManufacturedDate { get; set; }
         
+        public DateTime ExpiryDate { get; set; }
+       
+        public string Manufacturer { get; set; }
         public int Quantity { get; set; }
-        
-        public string DrugName { get; set; }
+        public string Location { get; set; }
     }
 }

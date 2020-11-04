@@ -14,31 +14,35 @@ namespace MfpeDrugsApi.Controllers
    [ApiController]
     public class DrugsApiController : ControllerBase
     {
-        IRepository<Drug> _item;
-
-        public DrugsApiController(IRepository<Drug> drugrepo)
+        static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(DrugsApiController));
+        IRepository _item;
+        
+        public DrugsApiController(IRepository drugrepo)
         {
             _item = drugrepo;
 
         }
         [HttpGet("{id:int}", Name = "Get")]
-        public Drug GetById(int id)
+        public List<LocationWiseDrug> searchDrugsByID(int id)
         {
-            return _item.Get(id);
+            _log4net.Info("Id Entered For Searching");
+            return _item.searchDrugsByID(id);
         }
 
 
         [HttpGet("{name}")]
-        public Drug GetByName(string name)
+        public List<LocationWiseDrug> searchDrugsByName(string name)
         {
-            return _item.Get(name);
+            _log4net.Info("Name Entered For Searching");
+            return _item.searchDrugsByName(name);
         }
 
         [HttpPost]
-        public bool Check([FromBody] DrugLocation model)
+        public bool getDispatchableDrugStock([FromBody] DrugLocation model)
         {
-            DrugLocationRepository obj = new DrugLocationRepository();
-            return obj.Check((int)model.Id, (string)model.Location);
+            _log4net.Info("Input Recieved From Another Api");
+            DrugRepository obj = new DrugRepository();
+            return obj.getDispatchableDrugStock((int)model.Id, (string)model.Location);
         }
 
     }

@@ -1,0 +1,41 @@
+INFO  02:20:29 Application started. Press Ctrl+C to shut down.
+INFO  02:20:29 Hosting environment: Development
+INFO  02:20:29 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  02:20:39 Id Entered For Searching
+INFO  02:20:39 Searchng started according to Id
+INFO  02:20:39 Drugs Details Returned According to Id
+INFO  03:01:38 Application started. Press Ctrl+C to shut down.
+INFO  03:01:38 Hosting environment: Development
+INFO  03:01:38 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  03:02:44 Id Entered For Searching
+INFO  03:02:44 Searchng started according to Id
+INFO  03:02:44 Drugs Details Returned According to Id
+INFO  03:03:02 Name Entered For Searching
+INFO  03:03:02 Searchng started according to Name
+INFO  03:03:02 Drugs Details Returned According to Name
+INFO  03:03:28 Name Entered For Searching
+INFO  03:03:28 Searchng started according to Name
+INFO  03:03:28 Drugs Details Returned According to Name
+INFO  03:04:18 Input Recieved From Another Api
+INFO  03:04:18 Response sent according to the data recieved by calling API
+INFO  03:05:15 Input Recieved From Another Api
+INFO  03:05:15 Response sent according to the data recieved by calling API
+INFO  03:05:27 Input Recieved From Another Api
+INFO  03:05:27 Response sent according to the data recieved by calling API
+INFO  03:06:57 Application started. Press Ctrl+C to shut down.
+INFO  03:06:57 Hosting environment: Development
+INFO  03:06:57 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  03:07:10 Id Entered For Searching
+INFO  03:07:10 Searchng started according to Id
+INFO  03:07:10 Drugs Details Returned According to Id
+INFO  03:07:26 Name Entered For Searching
+INFO  03:07:26 Searchng started according to Name
+INFO  03:07:26 Drugs Details Returned According to Name
+INFO  03:07:58 Input Recieved From Another Api
+INFO  03:07:58 Response sent according to the data recieved by calling API
+INFO  03:08:13 Input Recieved From Another Api
+INFO  03:08:13 Response sent according to the data recieved by calling API
+INFO  03:08:31 Input Recieved From Another Api
+INFO  03:08:31 Response sent according to the data recieved by calling API
+INFO  03:08:45 Input Recieved From Another Api
+INFO  03:08:45 Response sent according to the data recieved by calling API
