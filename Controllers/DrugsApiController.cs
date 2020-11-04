@@ -37,12 +37,12 @@ namespace MfpeDrugsApi.Controllers
             return _item.searchDrugsByName(name);
         }
 
-        [HttpPost]
-        public bool getDispatchableDrugStock([FromBody] DrugLocation model)
+        [HttpPost("{DrugId}/{Location}")]
+        public bool getDispatchableDrugStock([FromRoute]int DrugId,string Location)
         {
             _log4net.Info("Input Recieved From Another Api");
             DrugRepository obj = new DrugRepository();
-            return obj.getDispatchableDrugStock((int)model.Id, (string)model.Location);
+            return obj.getDispatchableDrugStock(DrugId, Location);
         }
 
     }
