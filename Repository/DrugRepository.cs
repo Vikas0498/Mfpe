@@ -46,19 +46,22 @@ namespace MfpeDrugsApi.Repository
         {
             _log4net.Info("Searchng started according to Id");
             Drug l1= druglist.Find(p => p.Id == id);
-            foreach(var i in druglocationlist)
+            if (l1 != null)
             {
-                if (i.Id == l1.Id)
+                foreach (var i in druglocationlist)
                 {
-                    LocationWiseDrug lwd = new LocationWiseDrug();
-                    lwd.Id = l1.Id;
-                    lwd.Name = l1.Name;
-                    lwd.ManufacturedDate = l1.ManufacturedDate;
-                    lwd.ExpiryDate = l1.ExpiryDate;
-                    lwd.Manufacturer = l1.Manufacturer;
-                    lwd.Quantity = i.Quantity;
-                    lwd.Location = i.Location;
-                    locationwisedrugslist.Add(lwd);
+                    if (i.Id == l1.Id)
+                    {
+                        LocationWiseDrug lwd = new LocationWiseDrug();
+                        lwd.Id = l1.Id;
+                        lwd.Name = l1.Name;
+                        lwd.ManufacturedDate = l1.ManufacturedDate;
+                        lwd.ExpiryDate = l1.ExpiryDate;
+                        lwd.Manufacturer = l1.Manufacturer;
+                        lwd.Quantity = i.Quantity;
+                        lwd.Location = i.Location;
+                        locationwisedrugslist.Add(lwd);
+                    }
                 }
             }
             _log4net.Info("Drugs Details Returned According to Id");
@@ -68,19 +71,22 @@ namespace MfpeDrugsApi.Repository
         {
             _log4net.Info("Searchng started according to Name");
             Drug l1= druglist.Find(p => p.Name == name);
-            foreach (var i in druglocationlist)
+            if (l1 != null)
             {
-                if (i.Id == l1.Id)
+                foreach (var i in druglocationlist)
                 {
-                    LocationWiseDrug lwd = new LocationWiseDrug();
-                    lwd.Id = l1.Id;
-                    lwd.Name = l1.Name;
-                    lwd.ManufacturedDate = l1.ManufacturedDate;
-                    lwd.ExpiryDate = l1.ExpiryDate;
-                    lwd.Manufacturer = l1.Manufacturer;
-                    lwd.Quantity = i.Quantity;
-                    lwd.Location = i.Location;
-                    locationwisedrugslist.Add(lwd);
+                    if (i.Id == l1.Id)
+                    {
+                        LocationWiseDrug lwd = new LocationWiseDrug();
+                        lwd.Id = l1.Id;
+                        lwd.Name = l1.Name;
+                        lwd.ManufacturedDate = l1.ManufacturedDate;
+                        lwd.ExpiryDate = l1.ExpiryDate;
+                        lwd.Manufacturer = l1.Manufacturer;
+                        lwd.Quantity = i.Quantity;
+                        lwd.Location = i.Location;
+                        locationwisedrugslist.Add(lwd);
+                    }
                 }
             }
             _log4net.Info("Drugs Details Returned According to Name");

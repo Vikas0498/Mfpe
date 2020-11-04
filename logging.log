@@ -39,3 +39,34 @@ INFO  03:08:31 Input Recieved From Another Api
 INFO  03:08:31 Response sent according to the data recieved by calling API
 INFO  03:08:45 Input Recieved From Another Api
 INFO  03:08:45 Response sent according to the data recieved by calling API
+INFO  04:38:57 Application started. Press Ctrl+C to shut down.
+INFO  04:38:57 Hosting environment: Development
+INFO  04:38:57 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  04:39:22 Name Entered For Searching
+INFO  04:39:22 Searchng started according to Name
+INFO  04:39:22 Drugs Details Returned According to Name
+INFO  04:39:39 Name Entered For Searching
+INFO  04:39:39 Searchng started according to Name
+INFO  04:39:39 Drugs Details Returned According to Name
+INFO  04:41:04 Application started. Press Ctrl+C to shut down.
+INFO  04:41:04 Hosting environment: Development
+INFO  04:41:04 Content root path: C:\Users\pande\source\repos\MfpeDrugsApi
+INFO  04:41:19 Id Entered For Searching
+INFO  04:41:19 Searchng started according to Id
+INFO  04:41:19 Drugs Details Returned According to Id
+INFO  04:41:29 Id Entered For Searching
+INFO  04:41:29 Searchng started according to Id
+INFO  04:41:29 Drugs Details Returned According to Id
+INFO  04:41:43 Id Entered For Searching
+INFO  04:41:43 Searchng started according to Id
+INFO  04:41:43 Drugs Details Returned According to Id
+INFO  04:42:01 Name Entered For Searching
+INFO  04:42:01 Searchng started according to Name
+INFO  04:42:01 Drugs Details Returned According to Name
+INFO  04:42:18 Name Entered For Searching
+INFO  04:42:18 Searchng started according to Name
+INFO  04:42:18 Drugs Details Returned According to Name
+INFO  04:42:39 Input Recieved From Another Api
+INFO  04:42:39 Response sent according to the data recieved by calling API
+INFO  04:42:53 Input Recieved From Another Api
+INFO  04:42:53 Response sent according to the data recieved by calling API
